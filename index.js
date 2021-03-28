@@ -62,4 +62,4 @@ app.post('/addOrder', (req, res) => {
 app.get('/', (req, res) => {
     res.send('hello world')
 });
-app.listen(4000);
+app.listen(process.env.PORT || 4000);
